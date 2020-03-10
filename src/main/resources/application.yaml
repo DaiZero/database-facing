@@ -1,1 +1,6 @@
-
+server:
+  port: 8008
+spring:
+  data:
+    mongodb:
+      uri: mongodb://192.168.13.108:27017/test
