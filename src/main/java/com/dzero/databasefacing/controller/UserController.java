@@ -3,6 +3,7 @@ package com.dzero.databasefacing.controller;
 import com.dzero.databasefacing.entity.User;
 import com.dzero.databasefacing.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.Assert;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,6 +24,10 @@ public class UserController {
 
     @PostMapping()
     public void add(@RequestBody User user){
+        if(user.getId()==null){
+            Assert.notNull(user.getId(),"dddd");
+//            throw new Exception("2222");
+        }
         userService.add(user);
     }
 }

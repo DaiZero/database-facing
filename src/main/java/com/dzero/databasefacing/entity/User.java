@@ -2,6 +2,7 @@ package com.dzero.databasefacing.entity;
 
 import lombok.Data;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -18,6 +19,20 @@ public class User implements Serializable {
     @Id
     @GeneratedValue
     private String id;
+
+    private String userNo;
+
     private String userName;
+
+    private Integer sex;
+
+    private String phoneNo;
+
     private String passWord;
+
+    private String salt;
+
 }
+
+
+

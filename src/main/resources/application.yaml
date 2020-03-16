@@ -4,3 +4,10 @@ spring:
   data:
     mongodb:
       uri: mongodb://192.168.13.108:27017/test
+springdoc:
+  swagger-ui:
+    ## path默认值：/swagger-ui.html
+    path: /swagger
+  api-docs:
+    ## path默认值：/v3/api-docs
+    path: /api-docs

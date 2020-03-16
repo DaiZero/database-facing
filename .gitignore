@@ -15,9 +15,12 @@ target/
 
 ### IntelliJ IDEA ###
 .idea
-*.iws
+target
+.mvn
+.gitignore
+mvnw
+mvnw.cmd
 *.iml
-*.ipr
 
 ### NetBeans ###
 /nbproject/private/
