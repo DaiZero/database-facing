@@ -8,6 +8,7 @@ import com.dzero.databasefacing.entity.User;
 public interface UserService {
 
     /**
+     * 新增人员信息
      * @param user
      */
     void add(User user);
