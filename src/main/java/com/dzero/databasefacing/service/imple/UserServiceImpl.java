@@ -1,9 +1,8 @@
 package com.dzero.databasefacing.service.imple;
 
-import com.dzero.databasefacing.entity.User;
+import com.dzero.databasefacing.entity.UserEntity;
 import com.dzero.databasefacing.repository.UserRepository;
 import com.dzero.databasefacing.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -19,8 +18,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void add(User user) {
-        User newUser=new User();
-        userRepo.insert(user);
+    public void add(UserEntity userEntity) {
+        userRepo.insert(userEntity);
     }
 }
